@@ -1,0 +1,42 @@
+.money-board {
+    flex: 0 0 30%;
+    position: relative;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        pointer-events: none;
+    }
+
+    &__icon-wrapper {
+        display: none;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .money-board {
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+
+        &__icon-wrapper {
+            display: block
+        }
+        &_active {
+            z-index: 1;
+        }
+    }
+    
+}

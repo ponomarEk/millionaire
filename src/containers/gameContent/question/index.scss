@@ -1,0 +1,135 @@
+.disabled {
+    pointer-events: none;
+}
+
+.question {
+    flex: 0 0 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 130px;
+    padding-bottom: 10vh;
+    padding-left: 80px;
+    box-sizing: border-box;
+    height: inherit;
+    background: #F5F5F7;
+
+    &__text-block {
+        width: 624px;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 116%;
+
+    }
+
+    &__buttons {
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__icon-wrapper {
+        display: none;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .question {
+        padding-top: 9vw;
+        padding-left: 5.55vw;
+
+        &__text-block {
+            width: 43.33vw;
+        }
+
+        &__text {
+            font-size: 2.22vw;
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 1278px) {
+    .question {
+        padding-top: 10.2vw;
+        padding-left: 6.3vw;
+
+
+        &__text-block {
+            width: 48.8vw;
+        }
+
+        &__text {
+            font-size: 2.5vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .question {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        gap: 43vh;
+
+        &__buttons {
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .question {
+        position: absolute;
+        width: 100%;
+        gap: 27vh;
+        justify-content: flex-end;
+        padding-bottom: 40px;
+
+        &__buttons {
+            width: 100%;
+        }
+
+        &__text-block {
+            width: 350px;
+            text-align: center;
+        }
+
+        &__text {
+            font-size: 21px;
+        }
+
+        &__icon-wrapper {
+            display: block;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .question {
+        gap: 17.6vh;
+
+        &__text-block {
+            width: 288px;
+        }
+
+        &__text {
+            font-size: 18px;
+        }
+
+    }
+}

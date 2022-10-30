@@ -1,0 +1,303 @@
+[
+  {
+    "id": 1,
+    "questionText": "Rolex is a company that specializes in what type of product?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Phone",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Watches",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Food",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Cosmetic",
+        "correct": false
+      }
+    ]
+  },{
+    "id": 2,
+    "questionText": "When did the website `Facebook` launch?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "2004",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text":"2005",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "2006",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "2007",
+        "correct": false
+      }
+    ]
+  },{
+    "id": 3,
+    "questionText": "Who played the character of Harry Potter in the movie?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Johnny Depp",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Leonardo DiCaprio",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Denzel Washington",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Daniel Radcliffe",
+        "correct": true
+      }
+    ]
+  },{
+    "id": 4,
+    "questionText": "When did 19 NATO members and 11 'Partners for Peace' join hands for peace plan for Kosovo Crisis?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "1999",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "1989",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "1979",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "1969",
+        "correct": true
+      }
+    ]
+  },{
+    "id": 5,
+    "questionText": "Hamid Karzai was chosen president of Afghanistan in:",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "2000",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "2001",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "2002",
+        "correct": true
+      },
+      {
+        "letter": "D",
+        "text": "2003",
+        "correct": false
+      }
+    ]
+  },{
+    "id": 6,
+    "questionText": "The headquarters of UN are situated at:",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "New York, USA",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "Haque (Netherlands)",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Geneva",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Paris",
+        "correct": false
+      }
+    ]
+  },{
+    "id": 7,
+    "questionText": "When and where was hockey introduced for women in Olympics?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "1908 at London",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "1980 at Moscow",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "1936 at Berlin",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "1924 at Paris",
+        "correct": true
+      }
+    ]
+  },{
+    "id": 8,
+    "questionText": "Lal Bahadur Shastri is also known as",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Guruji",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Man of Peace",
+        "correct": true
+      },
+      {
+        "letter": "C",
+        "text": "Punjab Kesari",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Mahamana",
+        "correct": false
+      }
+    ]
+  },{
+    "id": 9,
+    "questionText": "When did Margaret Thatcher became the first female Prime Minister of Britain?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "1998",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "1989",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "1979",
+        "correct": true
+      },
+      {
+        "letter": "D",
+        "text": "1800",
+        "correct": false
+      }
+    ]
+  },{
+    "id": 10,
+    "questionText": "On which country the US declared war after the bombing of Pearl Harbor?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Japan",
+        "correct": true
+      },
+      {
+        "letter": "B",
+        "text": "Russia",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Germany",
+        "correct": false
+      },
+      {
+        "letter": "D",
+        "text": "China",
+        "correct": false
+      }
+    ]
+  },{
+    "id": 11,
+    "questionText": "When is the International Workers' Day?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "15th April",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "12th December",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "1st May",
+        "correct": true
+      },
+      {
+        "letter": "D",
+        "text": "1st August",
+        "correct": false
+      }
+    ]
+  },{
+    "id": 12,
+    "questionText": "In which of these household appliances would you find a lint screen?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Dishwasher",
+        "correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Microwave oven",
+        "correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Clothes dryer",
+        "correct": true
+      },
+      {
+        "letter": "D",
+        "text": "Trash compactor",
+        "correct": false
+      }
+    ]
+  }
+]
