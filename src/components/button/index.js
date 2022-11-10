@@ -1,19 +1,24 @@
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
+import useGameConfig from '../../hooks/useGameConfig';
 
 import './index.scss';
 
-const Button = ({ buttonText, path, onClick }) => {
-  const navigateTo = useNavigate();
+const Button = () => {
+	const navigateTo = useNavigate();
+	const { pathname } = useLocation();
+	const { resetState } = useGameConfig();
 
-  const handleClick = () => {
-    typeof onClick === 'function' && onClick();
-    navigateTo(path);
-  };
-  return (
-    <div className="button" onClick={handleClick}>
-      <p className="button__text">{buttonText}</p>
-    </div>
-  );
+	const isEndPage = pathname === '/end';
+
+	const handleClick = () => {
+		isEndPage && resetState();
+		navigateTo(isEndPage ? '/' : '/game');
+	};
+	return (
+		<div className='button' onClick={handleClick}>
+			<p className='button__text'>{isEndPage ? 'Try again' : 'Start'}</p>
+		</div>
+	);
 };
 
 export default Button;

@@ -5,7 +5,7 @@ import Button from '../button';
 
 import './index.scss';
 
-const Layout = ({ path, buttonText, resetEarnedMoney, children }) => {
+const Layout = ({ children }) => {
   return (
     <>
       <img className="background" src={background} alt="" />
@@ -14,7 +14,7 @@ const Layout = ({ path, buttonText, resetEarnedMoney, children }) => {
           <img className="layout__hand" src={handImg} alt="" />
           <div className="layout__button-group">
             <div className="layout__header">{children}</div>
-            <Button buttonText={buttonText} path={path} onClick={resetEarnedMoney}/>
+            <Button />
           </div>
         </div>
       </div>
