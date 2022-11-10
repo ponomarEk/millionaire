@@ -7,15 +7,15 @@ import GameContent from './containers/gameContent';
 import './App.scss';
 
 const App = () => {
-	return (
-		<div className='app'>
-			<Routes>
-				<Route path='/' element={<StartPage />} />
-				<Route path='/game' element={<GameContent />} />
-				<Route path='/end' element={<EndPage />} />
-			</Routes>
-		</div>
-	);
+  return (
+    <div className="app">
+      <Routes>
+        <Route path="/" element={<StartPage />} />
+        <Route path="/game" element={<GameContent />} />
+        <Route path="/end" element={<EndPage />} />
+      </Routes>
+    </div>
+  );
 };
 
 export default App;
