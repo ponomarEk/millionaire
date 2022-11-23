@@ -1,21 +1,26 @@
 import { Route, Routes } from 'react-router-dom';
 
-import StartPage from './containers/startPage';
-import EndPage from './containers/endPage';
-import GameContent from './containers/gameContent';
+import { EndPage, GameContent, StartPage } from './containers';
+import { ROUTE_PATHS } from './constants';
 
 import './App.scss';
+
+const ROUTES = [
+  { path: ROUTE_PATHS.START, element: <StartPage /> },
+  { path: ROUTE_PATHS.GAME, element: <GameContent /> },
+  { path: ROUTE_PATHS.END, element: <EndPage /> },
+];
 
 const App = () => {
   return (
     <div className="app">
       <Routes>
-        <Route path="/" element={<StartPage />} />
-        <Route path="/game" element={<GameContent />} />
-        <Route path="/end" element={<EndPage />} />
+        {ROUTES.map((route) => (
+          <Route key={route.path} {...route} />
+        ))}
       </Routes>
     </div>
   );
 };
 
-export default App;
+export { App };

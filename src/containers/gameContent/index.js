@@ -1,5 +1,5 @@
-import MoneyBoard from './moneyBoard';
-import Question from './question';
+import { MoneyBoard } from './moneyBoard';
+import { Question } from './question';
 
 import './index.scss';
 
@@ -12,4 +12,4 @@ const GameContent = () => {
   );
 };
 
-export default GameContent;
+export { GameContent };

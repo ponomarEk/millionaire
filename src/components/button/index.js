@@ -1,7 +1,7 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 
-import useGameConfig from '../../hooks/useGameConfig';
-
+import { ROUTE_PATHS } from '../../constants';
+import { useGameConfig } from '../../hooks/useGameConfig';
 import './index.scss';
 
 const Button = () => {
@@ -9,12 +9,17 @@ const Button = () => {
   const { pathname } = useLocation();
   const { resetState } = useGameConfig();
 
-  const isEndPage = pathname === '/end';
+  const isEndPage = pathname === ROUTE_PATHS.END;
 
   const handleClick = () => {
-    isEndPage && resetState();
-    navigateTo(isEndPage ? '/' : '/game');
+    if (isEndPage) {
+      resetState();
+      navigateTo(ROUTE_PATHS.START);
+    } else {
+      navigateTo(ROUTE_PATHS.GAME);
+    }
   };
+
   return (
     <div className="button" onClick={handleClick}>
       <p className="button__text">{isEndPage ? 'Try again' : 'Start'}</p>
@@ -22,5 +27,4 @@ const Button = () => {
   );
 };
 
-export default Button;
-	
+export { Button };

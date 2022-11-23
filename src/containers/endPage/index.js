@@ -1,14 +1,20 @@
-import Layout from '../../components/layout';
-import useGameConfig from '../../hooks/useGameConfig';
+import { Layout } from '../../components';
+import { useGameConfig } from '../../hooks/useGameConfig';
 
 const EndPage = () => {
-  const { earnedMoney } = useGameConfig();
+  const { stageData } = useGameConfig();
   return (
     <Layout>
       <p className="layout__total-score">Total score:</p>
-      <h1>{earnedMoney} earned</h1>
+      <h1>
+        {stageData.earnedMoney.toLocaleString('en-US', {
+          style: 'currency',
+          currency: 'USD',
+          maximumFractionDigits: 0,
+        })}
+      </h1>
     </Layout>
   );
 };
 
-export default EndPage;
+export { EndPage };

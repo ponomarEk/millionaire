@@ -1,4 +1,4 @@
-import Layout from '../../components/layout';
+import { Layout } from '../../components';
 
 const StartPage = () => {
   return (
@@ -11,4 +11,4 @@ const StartPage = () => {
   );
 };
 
-export default StartPage;
+export { StartPage };

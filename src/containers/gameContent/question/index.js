@@ -1,34 +1,30 @@
-import GameButton from '../../../components/gameButton';
+import { GameButton } from '../../../components';
 
-import burger from '../../../assets/images/burger.png';
-
+import { useGameConfig } from '../../../hooks/useGameConfig';
+import { GAME_BUTTON_TYPES } from '../../../constants';
+import burgerIcon from '../../../assets/images/burger.png';
 import './index.scss';
-import useGameConfig from '../../../hooks/useGameConfig';
 
 const Question = () => {
-  const { questionsMock, questionNumber, isDisabledActions, setBurgerOpened } =
+  const { currentQuestion, areDisabledActions, handleBurgerOpen } =
     useGameConfig();
 
-  const { id, questionText, answers } = questionsMock[questionNumber - 1];
-
-  const handleBurgerClick = () => {
-    setBurgerOpened(true);
-  };
+  const { id, questionText, answers } = currentQuestion;
 
   return (
     <div className="question">
-      <div className="question__icon-wrapper" onClick={handleBurgerClick}>
-        <img className="question__icon" src={burger} alt="" />
+      <div className="question__icon-wrapper" onClick={handleBurgerOpen}>
+        <img className="question__icon" src={burgerIcon} alt="" />
       </div>
       <div className="question__text-block">
         <p className="question__text">{questionText}</p>
       </div>
-      <div className={`question__buttons ${isDisabledActions && 'disabled'}`}>
-        {answers.map((curr, i) => (
+      <div className={`question__buttons ${areDisabledActions && 'disabled'}`}>
+        {answers.map((curr) => (
           <GameButton
-            key={i}
+            key={curr.text}
             id={id}
-            type="large"
+            type={GAME_BUTTON_TYPES.LARGE}
             letter={curr.letter}
             isCorrect={curr.correct}
             buttonText={curr.text}
@@ -39,4 +35,4 @@ const Question = () => {
   );
 };
 
-export default Question;
+export { Question };

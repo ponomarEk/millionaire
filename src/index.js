@@ -2,16 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { HashRouter as Router } from 'react-router-dom';
 
-import App from './App';
+import { App } from './App';
+
 import { GameConfigProvider } from './hooks/useGameConfig';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
-      <GameConfigProvider>
+    <GameConfigProvider>
+      <Router>
         <App />
-      </GameConfigProvider>
-    </Router>
+      </Router>
+    </GameConfigProvider>
   </React.StrictMode>
 );
